@@ -1,0 +1,14 @@
+[Start]
+Root: Workspace.Map.System
+(1: Start):
+FOLDER : Cornlab
+MODEL : KeySystem
+Target : Key
+If Target ~= nil then:
+If Mode == AutoGrab then:
+ToggleTeleport
+(end)
+ElseIf Mode == Appear then:
+WaitForTouch Then: ToggleTeleport
+End
+(1: End)
